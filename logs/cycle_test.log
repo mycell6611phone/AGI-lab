@@ -1,0 +1,78 @@
+2025-07-09 00:47:11,791 | INFO | sentence_transformers.SentenceTransformer | Use pytorch device_name: cuda:0
+2025-07-09 00:47:11,791 | INFO | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-09 00:47:13,851 | WARNING | memory | Failed to load SentenceTransformer: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2025-07-09 00:47:13,874 | INFO | cycle_test | Cycle 0 input: Test cycle 0
+2025-07-09 00:47:13,874 | INFO | cycle_test | Debate result: {'input': 'Test cycle 0', 'mood_a': 'creative', 'resp_a': 'LLAMA3>>> Test cycle 0', 'mood_b': 'creative', 'resp_b': 'LLAMA3>>> Test cycle 0', 'winner': 'A', 'reasoning': 'similar length; random tie break'}
+2025-07-09 00:47:13,874 | INFO | memory_debate | MemoryA initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,875 | INFO | memory_debate | MemoryB initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,875 | INFO | cycle_test | Memory filter: {'validated': [], 'rejected': [{'text': 'similar length; random tie break', 'reason': 'RETAINED'}], 'confidence': 0.0}
+2025-07-09 00:47:13,875 | INFO | cycle_test | Drift summary: {'agreement_rate': 1.0, 'guardian_override_rate': 0.0, 'avg_response_length_delta': 0.0}
+2025-07-09 00:47:13,876 | INFO | cycle_test | Recall results: []
+2025-07-09 00:47:13,876 | INFO | cycle_test | Cycle 1 input: Test cycle 1
+2025-07-09 00:47:13,876 | INFO | cycle_test | Debate result: {'input': 'Test cycle 1', 'mood_a': 'skeptical', 'resp_a': 'LLAMA3>>> Test cycle 1', 'mood_b': 'analytical', 'resp_b': 'LLAMA3>>> Test cycle 1', 'winner': 'B', 'reasoning': 'similar length; random tie break'}
+2025-07-09 00:47:13,876 | INFO | memory_debate | MemoryA initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,876 | INFO | memory_debate | MemoryB initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,876 | INFO | cycle_test | Memory filter: {'validated': [], 'rejected': [{'text': 'similar length; random tie break', 'reason': 'RETAINED'}], 'confidence': 0.0}
+2025-07-09 00:47:13,876 | INFO | cycle_test | Drift summary: {'agreement_rate': 1.0, 'guardian_override_rate': 0.0, 'avg_response_length_delta': 0.0}
+2025-07-09 00:47:13,876 | INFO | cycle_test | Recall results: []
+2025-07-09 00:47:13,876 | INFO | cycle_test | Cycle 2 input: Test cycle 2
+2025-07-09 00:47:13,876 | INFO | cycle_test | Debate result: {'input': 'Test cycle 2', 'mood_a': 'creative', 'resp_a': 'LLAMA3>>> Test cycle 2', 'mood_b': 'skeptical', 'resp_b': 'LLAMA3>>> Test cycle 2', 'winner': 'B', 'reasoning': 'similar length; random tie break'}
+2025-07-09 00:47:13,876 | INFO | memory_debate | MemoryA initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,876 | INFO | memory_debate | MemoryB initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,877 | INFO | cycle_test | Memory filter: {'validated': [], 'rejected': [{'text': 'similar length; random tie break', 'reason': 'RETAINED'}], 'confidence': 0.0}
+2025-07-09 00:47:13,877 | INFO | cycle_test | Drift summary: {'agreement_rate': 1.0, 'guardian_override_rate': 0.0, 'avg_response_length_delta': 0.0}
+2025-07-09 00:47:13,877 | INFO | cycle_test | Recall results: []
+2025-07-09 00:47:13,877 | INFO | cycle_test | Cycle 3 input: Test cycle 3
+2025-07-09 00:47:13,877 | INFO | cycle_test | Debate result: {'input': 'Test cycle 3', 'mood_a': 'skeptical', 'resp_a': 'LLAMA3>>> Test cycle 3', 'mood_b': 'analytical', 'resp_b': 'LLAMA3>>> Test cycle 3', 'winner': 'A', 'reasoning': 'similar length; random tie break'}
+2025-07-09 00:47:13,877 | INFO | memory_debate | MemoryA initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,877 | INFO | memory_debate | MemoryB initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,877 | INFO | cycle_test | Memory filter: {'validated': [], 'rejected': [{'text': 'similar length; random tie break', 'reason': 'RETAINED'}], 'confidence': 0.0}
+2025-07-09 00:47:13,877 | INFO | cycle_test | Drift summary: {'agreement_rate': 1.0, 'guardian_override_rate': 0.0, 'avg_response_length_delta': 0.0}
+2025-07-09 00:47:13,877 | INFO | cycle_test | Recall results: []
+2025-07-09 00:47:13,877 | INFO | cycle_test | Cycle 4 input: Test cycle 4
+2025-07-09 00:47:13,877 | INFO | cycle_test | Debate result: {'input': 'Test cycle 4', 'mood_a': 'analytical', 'resp_a': 'LLAMA3>>> Test cycle 4', 'mood_b': 'optimistic', 'resp_b': 'LLAMA3>>> Test cycle 4', 'winner': 'B', 'reasoning': 'similar length; random tie break'}
+2025-07-09 00:47:13,877 | INFO | memory_debate | MemoryA initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,877 | INFO | memory_debate | MemoryB initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,878 | INFO | cycle_test | Memory filter: {'validated': [], 'rejected': [{'text': 'similar length; random tie break', 'reason': 'RETAINED'}], 'confidence': 0.0}
+2025-07-09 00:47:13,878 | INFO | cycle_test | Drift summary: {'agreement_rate': 1.0, 'guardian_override_rate': 0.0, 'avg_response_length_delta': 0.0}
+2025-07-09 00:47:13,878 | INFO | cycle_test | Recall results: []
+2025-07-09 00:47:13,878 | INFO | cycle_test | Cycle 5 input: Test cycle 5
+2025-07-09 00:47:13,878 | INFO | cycle_test | Debate result: {'input': 'Test cycle 5', 'mood_a': 'optimistic', 'resp_a': 'LLAMA3>>> Test cycle 5', 'mood_b': 'critical', 'resp_b': 'LLAMA3>>> Test cycle 5', 'winner': 'B', 'reasoning': 'similar length; random tie break'}
+2025-07-09 00:47:13,878 | INFO | memory_debate | MemoryA initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,878 | INFO | memory_debate | MemoryB initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,878 | INFO | cycle_test | Memory filter: {'validated': [], 'rejected': [{'text': 'similar length; random tie break', 'reason': 'RETAINED'}], 'confidence': 0.0}
+2025-07-09 00:47:13,878 | INFO | cycle_test | Drift summary: {'agreement_rate': 1.0, 'guardian_override_rate': 0.0, 'avg_response_length_delta': 0.0}
+2025-07-09 00:47:13,878 | INFO | cycle_test | Recall results: []
+2025-07-09 00:47:13,878 | INFO | cycle_test | Cycle 6 input: Test cycle 6
+2025-07-09 00:47:13,878 | INFO | cycle_test | Debate result: {'input': 'Test cycle 6', 'mood_a': 'analytical', 'resp_a': 'LLAMA3>>> Test cycle 6', 'mood_b': 'analytical', 'resp_b': 'LLAMA3>>> Test cycle 6', 'winner': 'A', 'reasoning': 'similar length; random tie break'}
+2025-07-09 00:47:13,878 | INFO | memory_debate | MemoryA initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,878 | INFO | memory_debate | MemoryB initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,879 | INFO | cycle_test | Memory filter: {'validated': [], 'rejected': [{'text': 'similar length; random tie break', 'reason': 'RETAINED'}], 'confidence': 0.0}
+2025-07-09 00:47:13,879 | INFO | cycle_test | Drift summary: {'agreement_rate': 1.0, 'guardian_override_rate': 0.0, 'avg_response_length_delta': 0.0}
+2025-07-09 00:47:13,879 | INFO | cycle_test | Recall results: []
+2025-07-09 00:47:13,879 | INFO | cycle_test | Cycle 7 input: Test cycle 7
+2025-07-09 00:47:13,879 | INFO | cycle_test | Debate result: {'input': 'Test cycle 7', 'mood_a': 'skeptical', 'resp_a': 'LLAMA3>>> Test cycle 7', 'mood_b': 'critical', 'resp_b': 'LLAMA3>>> Test cycle 7', 'winner': 'A', 'reasoning': 'similar length; random tie break'}
+2025-07-09 00:47:13,879 | INFO | memory_debate | MemoryA initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,879 | INFO | memory_debate | MemoryB initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,879 | INFO | cycle_test | Memory filter: {'validated': [], 'rejected': [{'text': 'similar length; random tie break', 'reason': 'RETAINED'}], 'confidence': 0.0}
+2025-07-09 00:47:13,879 | INFO | cycle_test | Drift summary: {'agreement_rate': 1.0, 'guardian_override_rate': 0.0, 'avg_response_length_delta': 0.0}
+2025-07-09 00:47:13,879 | INFO | cycle_test | Recall results: []
+2025-07-09 00:47:13,879 | INFO | cycle_test | Cycle 8 input: Test cycle 8
+2025-07-09 00:47:13,879 | INFO | cycle_test | Debate result: {'input': 'Test cycle 8', 'mood_a': 'skeptical', 'resp_a': 'LLAMA3>>> Test cycle 8', 'mood_b': 'creative', 'resp_b': 'LLAMA3>>> Test cycle 8', 'winner': 'A', 'reasoning': 'similar length; random tie break'}
+2025-07-09 00:47:13,879 | INFO | memory_debate | MemoryA initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,879 | INFO | memory_debate | MemoryB initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,880 | INFO | cycle_test | Memory filter: {'validated': [], 'rejected': [{'text': 'similar length; random tie break', 'reason': 'RETAINED'}], 'confidence': 0.0}
+2025-07-09 00:47:13,880 | INFO | cycle_test | Drift summary: {'agreement_rate': 1.0, 'guardian_override_rate': 0.0, 'avg_response_length_delta': 0.0}
+2025-07-09 00:47:13,880 | INFO | cycle_test | Recall results: []
+2025-07-09 00:47:13,880 | INFO | cycle_test | Cycle 9 input: Test cycle 9
+2025-07-09 00:47:13,880 | INFO | cycle_test | Debate result: {'input': 'Test cycle 9', 'mood_a': 'skeptical', 'resp_a': 'LLAMA3>>> Test cycle 9', 'mood_b': 'creative', 'resp_b': 'LLAMA3>>> Test cycle 9', 'winner': 'B', 'reasoning': 'similar length; random tie break'}
+2025-07-09 00:47:13,880 | INFO | memory_debate | MemoryA initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,880 | INFO | memory_debate | MemoryB initialised with model 'llama3' mood ''
+2025-07-09 00:47:13,880 | INFO | cycle_test | Memory filter: {'validated': [], 'rejected': [{'text': 'similar length; random tie break', 'reason': 'RETAINED'}], 'confidence': 0.0}
+2025-07-09 00:47:13,880 | INFO | cycle_test | Drift summary: {'agreement_rate': 1.0, 'guardian_override_rate': 0.0, 'avg_response_length_delta': 0.0}
+2025-07-09 00:47:13,880 | INFO | cycle_test | Recall results: []
+2025-07-09 00:47:13,880 | INFO | cycle_test | Completed all cycles

@@ -1,0 +1,35 @@
+"""
+agent_personas.py
+
+Purpose:
+Defines and manages internal sub-agents or "personas" with different reasoning styles or expertise.
+Stub only—no logic yet.
+"""
+
+class AgentPersonas:
+    """Handles the creation and coordination of multiple sub-agents or personas."""
+
+    def __init__(self):
+        """Initialize persona registry or collection."""
+        print("[AgentPersonas] Initialized")
+
+    def add_persona(self, persona):
+        """Add a new persona (e.g., critic, optimist, skeptic)."""
+        print(f"[AgentPersonas] Adding persona: {persona}")
+        return None
+
+    def get_persona(self, persona_id):
+        """Retrieve a specific persona by ID."""
+        print(f"[AgentPersonas] Getting persona with ID: {persona_id}")
+        return None
+
+    def list_personas(self):
+        """List all registered personas."""
+        print("[AgentPersonas] Listing all personas")
+        return []
+
+    def remove_persona(self, persona_id):
+        """Remove a persona from the system."""
+        print(f"[AgentPersonas] Removing persona with ID: {persona_id}")
+        return None
+

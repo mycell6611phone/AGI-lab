@@ -1,0 +1,24 @@
+# webtool.py
+
+import requests
+from config import GOOGLE_API_KEY, GOOGLE_CSE_ID
+
+def google_search(query, num_results=3):
+    url = "https://www.googleapis.com/customsearch/v1"
+    params = {
+        "q": query,
+        "key": GOOGLE_API_KEY,
+        "cx": GOOGLE_CSE_ID,
+        "num": num_results,
+    }
+    resp = requests.get(url, params=params, timeout=20)
+    if not resp.ok:
+        return f"[Search failed: {resp.status_code} {resp.text}]"
+    data = resp.json()
+    results = []
+    for item in data.get("items", []):
+        title = item.get("title", "")
+        snippet = item.get("snippet", "")
+        link = item.get("link", "")
+        results.append(f"{title}\n{snippet}\n{link}")
+    return "\n\n".join(results) if results else "No results found."
