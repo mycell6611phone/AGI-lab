@@ -3,8 +3,7 @@ import json
 import time
 
 # ---- CONFIGURATION ----
-GOOGLE_API_KEY = "AIzaSyAB_vHJ26vL0Cco8q9sklNTVNBVFfwiXU4"
-GOOGLE_CSE_ID = "864cf5ba9020042d9"
+
 LLAMA_URL = "http://localhost:11434/api/chat"  # Adjust for your Ollama/Llama API
 
 # ---- GOOGLE SEARCH TOOL ----
